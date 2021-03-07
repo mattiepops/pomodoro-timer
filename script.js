@@ -23,8 +23,8 @@ window.addEventListener('load', function () {
 
 // store a reference to a timer variable
 
-wm.innerHTML = 0;
-ws.innerHTML = "05";
+wm.innerHTML = 25;
+ws.innerHTML = "00";
 bm.innerHTML = 5;
 bs.innerHTML = "00";
 
@@ -37,7 +37,7 @@ let startTimer;
 start.addEventListener('click', () => {
 
     if (startTimer === undefined) {
-        startTimer = setInterval(timer, 50)
+        startTimer = setInterval(timer, 1000)
     } else {
         alert("Timer is already Running")
     }
