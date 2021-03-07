@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+
+    <div id="loader"></div>
+
+    <div class="main hidden">
+        <div class="page-titles">
+            <div class="header">
+                <i class="far fa-lemon fa-2x logo"></i>
+                <h1>Pomodoro Timer</h1>
+            </div>
+
+            <h2>Finally get Some Work Done, <i class="far fa-lemon"></i> Style</h2>
+        </div>
+
+        <div id="container">
+
+            <!-- Work Timer -->
+
+            <div class="tomato tomato-timer">
+
+                <div id="work" class="label">Work</div>
+                <div id="work-timer" class="timer">
+                    <p id="w-minutes"></p>
+                    <p class="semicolon">:</p>
+                    <p id="w-seconds"></p>
+                </div>
+                <div id="start" class="btn">Start</div>
+
+            </div>
+
+            <div class="tomato short-break">
+                <div id="break" class="label">Break</div>
+                <div id="break-timer" class="timer">
+                    <p id="b-minutes"></p>
+                    <p class="semicolon">:</p>
+                    <p id="b-seconds"></p>
+                </div>
+                <div id="stop" class="btn">Pause</div>
+
+            </div>
+            <div class="tomato long-break">
+                <div id="cycles" class="label">Cycles</div>
+                <div id="counter" class="timer">0</div>
+                <div id="reset" class="btn">Reset</div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
